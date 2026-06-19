@@ -1,0 +1,4 @@
+# Staging site — not for public indexing until launch (domain swap to theainhub.com).
+# At launch, replace the two lines below with:  User-agent: *  /  Allow: /
+User-agent: *
+Disallow: /
