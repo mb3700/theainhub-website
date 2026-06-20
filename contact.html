@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact — The Ain Hub</title>
-<meta name="description" content="Book a workshop or start a conversation about AI integration. Tell us about your business and we'll find where AI fits. Based at FGCU, serving Southwest Florida.">
+<meta name="description" content="Tell us where the hours go and we'll show you where AI fits. Start small, prove it fast—no long contract, month-to-month. Based at FGCU, serving Southwest Florida.">
 <meta property="og:title" content="Contact — The Ain Hub">
-<meta property="og:description" content="Book a workshop or start a conversation about AI integration for your Southwest Florida business.">
+<meta property="og:description" content="Let's find where AI fits. A real conversation with you and your leadership team—no commitment, no lock-in.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://ainhub-staging.vercel.app/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -16,20 +16,33 @@
   <a href="./index.html"><img class="brand" src="./img/ainhub-wordmark-color.svg" alt="ainhub"></a>
   <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
-    <a href="./workshops.html">Workshops</a>
-    <a href="./work.html">Our Work</a>
+    <div class="has-sub">
+      <a href="./what-we-do.html">What we do<span class="caret" aria-hidden="true"></span></a>
+      <div class="sub">
+        <a href="./workshops.html">Workshops</a>
+        <a href="./train.html">Train</a>
+        <a href="./transform.html">Transform</a>
+      </div>
+    </div>
     <a href="./about.html">About</a>
     <a href="./contact.html" class="active">Contact</a>
-    <a class="pill sm" href="./contact.html">Book a workshop</a>
+    <a class="pill sm" href="./contact.html">Talk to us</a>
   </div>
 </div></nav>
 
 <!-- PAGE HERO -->
-<div class="page-hero"><div class="wrap">
-  <div class="eyebrow reveal">Contact</div>
-  <h1 class="reveal d1">Let&rsquo;s find where AI fits.</h1>
-  <p class="lead reveal d2">Tell us about your organization and goals&mdash;whether that&rsquo;s a hands&#8209;on workshop, team training, or full AI integration. No commitment, just a conversation.</p>
-</div></div>
+<header class="page-hero dark">
+  <div class="ph-motif">
+    <svg class="facet f1" viewBox="0 0 200 200" aria-hidden="true"><path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#7FD0BC"/><path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#7FD0BC" fill-opacity="0.5"/><path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#00a37a"/><path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#00a37a" fill-opacity="0.55"/></svg>
+    <svg class="facet f2" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#7FD0BC" stroke-width="2"/></svg>
+    <svg class="facet f3" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#fff" stroke-width="2.5"/></svg>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow reveal">Contact</div>
+    <h1 class="reveal d1">Let&rsquo;s find where AI <span class="ac">fits.</span></h1>
+    <p class="lead reveal d2">Tell us where the hours go, and we&rsquo;ll show you where to start&mdash;small, with no long contract. Whether that&rsquo;s a workshop, training, or full integration, it begins with a conversation, not a pitch.</p>
+  </div>
+</header>
 
 <!-- CONTACT -->
 <section><div class="wrap"><div class="contact-grid">
@@ -51,16 +64,16 @@
       <div class="field">
         <label>What are you interested in? <span class="opt">(pick any)</span></label>
         <div class="chips">
-          <label><input type="checkbox" name="interest" value="AI Workshop"><span>AI Workshop</span></label>
-          <label><input type="checkbox" name="interest" value="Team Training"><span>Team Training</span></label>
+          <label><input type="checkbox" name="interest" value="Workshop"><span>Workshop</span></label>
+          <label><input type="checkbox" name="interest" value="Training"><span>Training</span></label>
           <label><input type="checkbox" name="interest" value="AI Integration"><span>AI Integration</span></label>
           <label><input type="checkbox" name="interest" value="Dashboard or App"><span>Dashboard or App</span></label>
           <label><input type="checkbox" name="interest" value="Not sure yet"><span>Not sure yet</span></label>
         </div>
       </div>
       <div class="field">
-        <label for="message">Tell us more</label>
-        <textarea id="message" name="message" required placeholder="What does your team do, and where do the hours go?"></textarea>
+        <label for="message">Where do the hours go?</label>
+        <textarea id="message" name="message" required placeholder="Tell us what your team does, and where the time disappears."></textarea>
       </div>
       <button class="pill" type="submit" style="width:100%;justify-content:center">Send message</button>
       <div class="form-status" id="cstatus" role="status" aria-live="polite"></div>
@@ -77,10 +90,10 @@
     <div style="margin-top:30px;padding:24px;background:var(--green-s);border-radius:16px">
       <div class="eyebrow" style="margin-bottom:12px">What to expect</div>
       <ul class="checks">
-        <li>A free consultation to understand your challenges</li>
-        <li>Meet our student consultants and faculty advisor</li>
-        <li>We&rsquo;ll explore the right solution together</li>
-        <li>No commitment required&mdash;just a conversation</li>
+        <li>A real conversation with you and your leadership team&mdash;not a pitch</li>
+        <li>We start small and prove it fast&mdash;in weeks, not quarters</li>
+        <li>No lock&#8209;in: month&#8209;to&#8209;month, cancel anytime&mdash;we either add value or we don&rsquo;t</li>
+        <li>No commitment to get started&mdash;just a conversation</li>
       </ul>
     </div>
     <p class="serving" style="color:var(--muted);margin-top:22px;font-size:13px">Serving Naples &middot; Fort Myers &middot; Bonita Springs &middot; Cape Coral &middot; Sanibel</p>
@@ -92,17 +105,22 @@
   <div class="foot-grid">
     <div>
       <img class="fl" src="./img/ainhub-wordmark-white.svg" alt="ainhub">
-      <p class="ft">FGCU&rsquo;s student&#8209;powered AI practice&mdash;helping Southwest Florida put AI to work.</p>
+      <p class="ft">FGCU&rsquo;s student&#8209;powered AI practice&mdash;getting the right information to the right person at the right time.</p>
       <p class="serving">Serving Naples &middot; Fort Myers &middot; Bonita Springs &middot; Cape Coral &middot; Sanibel</p>
     </div>
     <div><h4>Explore</h4><ul>
+      <li><a href="./what-we-do.html">What we do</a></li>
       <li><a href="./workshops.html">Workshops</a></li>
-      <li><a href="./work.html">Our Work</a></li>
+      <li><a href="./train.html">Train</a></li>
+      <li><a href="./transform.html">Transform</a></li>
       <li><a href="./about.html">About</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul></div>
-    <div><h4>What we do</h4><ul>
-      <li>AI Workshops</li><li>Team Training</li><li>AI Integration</li><li>Dashboards &amp; Apps</li>
+    <div><h4>Services</h4><ul>
+      <li><a href="./workshops.html">AI Workshops</a></li>
+      <li><a href="./train.html">Team Training</a></li>
+      <li><a href="./transform.html">AI Integration</a></li>
+      <li><a href="./transform.html">Dashboards &amp; Apps</a></li>
     </ul></div>
     <div><h4>Connect</h4><ul>
       <li><a href="mailto:mbole@fgcu.edu">mbole@fgcu.edu</a></li>
