@@ -48,6 +48,22 @@
     if(im.complete && im.naturalWidth===0) fb();
   });
 
+  // hero cursor parallax — subtle depth on the faceted motif + art
+  var ph=document.querySelector('.page-hero');
+  if(ph && matchMedia('(pointer:fine)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
+    var motif=ph.querySelector('.ph-motif'), art=ph.querySelector('.ph-art'), raf=0, nx=0, ny=0;
+    function applyPar(){raf=0;
+      if(motif)motif.style.transform='translate('+(nx*22).toFixed(1)+'px,'+(ny*22).toFixed(1)+'px)';
+      if(art)art.style.transform='translate('+(nx*-12).toFixed(1)+'px,'+(ny*-12).toFixed(1)+'px)';
+    }
+    ph.addEventListener('mousemove',function(e){
+      var r=ph.getBoundingClientRect();
+      nx=(e.clientX-r.left)/r.width-0.5; ny=(e.clientY-r.top)/r.height-0.5;
+      if(!raf)raf=requestAnimationFrame(applyPar);
+    });
+    ph.addEventListener('mouseleave',function(){nx=0;ny=0;if(!raf)raf=requestAnimationFrame(applyPar);});
+  }
+
   // mobile menu toggle
   var tog=document.querySelector('.nav-toggle'),
       links=document.querySelector('.nav-links');

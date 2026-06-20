@@ -1,205 +1,388 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Ain Hub — Put AI to work in your business</title>
-<meta name="description" content="Faculty-led, student-powered AI for Southwest Florida businesses. Start with a hands-on workshop, then let us capture your workflows, automate the busywork, and build the tools your team actually uses.">
-<meta property="og:title" content="The Ain Hub — Put AI to work in your business">
-<meta property="og:description" content="Hands-on AI workshops and full integration for Southwest Florida businesses. Faculty-led, student-powered, based at FGCU.">
+<title>The Ain Hub — Put AI to work, not someday, now.</title>
+<meta name="description" content="Faculty-led, student-powered AI integration for Southwest Florida. Start with a hands-on workshop, then let us capture your workflows, automate the busywork, and build the internal tools your team actually uses.">
+<meta property="og:title" content="The Ain Hub — Put AI to work, now.">
+<meta property="og:description" content="AI integration for Southwest Florida — workshops, training, and the internal apps and dashboards that change how the work gets done.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://ainhub-staging.vercel.app/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,800;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/site.css">
 </head><body>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#003775"/><g transform="translate(50 50)"><path d="M 0,-22 L 19,-11 L 0,0 Z" fill="#7FD0BC"/><path d="M 19,-11 L 19,11 L 0,0 Z" fill="#7FD0BC" fill-opacity="0.55"/><path d="M 0,0 L 19,11 L 0,22 L -19,11 Z" fill="#00a37a"/><path d="M -19,-11 L 0,-22 L 0,0 L -19,11 Z" fill="#00a37a" fill-opacity="0.6"/></g></svg>
+</template>
 
 <nav><div class="wrap nav-in">
   <a href="./index.html"><img class="brand" src="./img/ainhub-wordmark-color.svg" alt="ainhub"></a>
   <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
-    <a href="./workshops.html">Workshops</a>
-    <a href="./work.html">Our Work</a>
+    <div class="has-sub">
+      <a href="./what-we-do.html">What we do<span class="caret" aria-hidden="true"></span></a>
+      <div class="sub">
+        <a href="./workshops.html">Workshops</a>
+        <a href="./train.html">Train</a>
+        <a href="./transform.html">Transform</a>
+      </div>
+    </div>
+    <a href="./work.html">Work</a>
     <a href="./about.html">About</a>
     <a href="./contact.html">Contact</a>
-    <a class="pill sm" href="./contact.html">Book a workshop</a>
+    <a class="pill sm" href="./contact.html">Talk to us</a>
   </div>
 </div></nav>
 
-<!-- HERO -->
-<div class="hero">
-<svg class="hex-drift hd1" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#007158" stroke-width="2"/></svg>
-<svg class="hex-drift hd2" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#003775" stroke-width="2"/></svg>
-<div class="wrap"><div class="hero-grid">
-  <div>
-    <div class="eyebrow reveal">FGCU &middot; Southwest Florida</div>
-    <h1 class="reveal d1">Put AI to work&mdash;not someday, now.</h1>
-    <p class="lead reveal d2">Faculty&#8209;led, student&#8209;powered, and built for Southwest Florida. Start with a hands&#8209;on workshop, then let us capture your workflows, automate the busywork, and build the tools your team actually uses&mdash;so AI means relief, not one more thing to figure out.</p>
-    <div class="cta reveal d3"><a class="pill" href="./contact.html">Book a workshop</a><a class="ghost" href="./work.html">See our work &rarr;</a></div>
-    <div class="rate reveal d4"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 9.5/10 from 500+ people trained across Southwest Florida</div>
+<!-- ===================== HERO ===================== -->
+<header class="page-hero dark" id="top">
+  <div class="ph-motif">
+    <svg class="facet f1" viewBox="0 0 200 200" aria-hidden="true"><path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#7FD0BC"/><path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#7FD0BC" fill-opacity="0.5"/><path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#00a37a"/><path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#00a37a" fill-opacity="0.55"/></svg>
+    <svg class="facet f2" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#7FD0BC" stroke-width="2"/></svg>
+    <svg class="facet f3" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#fff" stroke-width="2.5"/></svg>
   </div>
-  <div class="hero-art reveal d2">
-    <svg viewBox="0 0 330 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An Ain Hub student helping a business owner use AI">
-      <defs>
-        <clipPath id="hx"><path d="M152 12 L292 92 L292 244 L152 324 L12 244 L12 92 Z"/></clipPath>
-        <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#007158"/><stop offset="1" stop-color="#003775"/>
-        </linearGradient>
-      </defs>
-      <path d="M170 30 L310 110 L310 262 L170 342 L30 262 L30 110 Z" fill="#D6E8E1"/>
-      <g clip-path="url(#hx)"><image class="hero-photo" href="./img/hero.webp" x="12" y="12" width="280" height="312" preserveAspectRatio="xMidYMid slice"/></g>
-      <path d="M152 12 L292 92 L292 244 L152 324 L12 244 L12 92 Z" fill="none" stroke="url(#edge)" stroke-width="3.5" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div></div></div>
+  <div class="wrap"><div class="ph-grid">
+    <div>
+      <div class="eyebrow reveal">AI Integration · FGCU · Southwest Florida</div>
+      <h1 class="reveal d1">Put AI to work&mdash;not someday, <span class="ac">now.</span></h1>
+      <p class="lead reveal d2">Faculty&#8209;led, student&#8209;powered, and built for Southwest Florida. We help your team solve real problems by putting AI to work&mdash;starting with a hands&#8209;on workshop, then capturing your workflows, automating the busywork, and building the tools your team actually uses.</p>
+      <div class="cta reveal d3">
+        <a class="pill" href="./contact.html">Book a workshop</a>
+        <a class="ghost lt" href="./what-we-do.html">See how it works &rarr;</a>
+      </div>
+      <div class="rate reveal d4"><span class="stars">★★★★★</span> 9.5/10 from 500+ people trained across Southwest Florida</div>
+    </div>
+    <div class="ph-art reveal d2">
+      <svg class="photo" viewBox="0 0 330 360" role="img" aria-label="An Ain Hub student helping a business owner use AI">
+        <defs>
+          <clipPath id="ahx"><path d="M152 12 L292 92 L292 244 L152 324 L12 244 L12 92 Z"/></clipPath>
+          <linearGradient id="ahedge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FD0BC"/><stop offset="1" stop-color="#0077B6"/></linearGradient>
+        </defs>
+        <path d="M170 30 L310 110 L310 262 L170 342 L30 262 L30 110 Z" fill="rgba(127,208,188,.18)"/>
+        <g clip-path="url(#ahx)"><image class="hero-photo" href="./img/hero.webp" x="12" y="12" width="280" height="312" preserveAspectRatio="xMidYMid slice"/></g>
+        <path d="M152 12 L292 92 L292 244 L152 324 L12 244 L12 92 Z" fill="none" stroke="url(#ahedge)" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+      <svg class="badge" viewBox="0 0 200 200" aria-hidden="true"><path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#003775"/><path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#003775" fill-opacity="0.75"/><path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#007158"/><path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#007158" fill-opacity="0.75"/><g stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"><path d="M100 100 L100 15 M100 100 L173 57.5 M100 100 L173 142.5 M100 100 L27 142.5"/></g></svg>
+      <div class="press-chip">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <span style="display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#007158"><svg viewBox="0 0 24 24" width="11" height="11" fill="#007158" aria-hidden="true"><path d="M4 4h13a3 3 0 0 1 3 3v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4Zm3 4v2h7V8H7Zm0 4v2h7v-2H7Z"/></svg>In the press</span>
+          <span style="font-size:9px;font-weight:800;letter-spacing:.05em;color:#56616F">JUN 2026</span>
+        </div>
+        <div style="font-family:Fraunces,serif;font-weight:600;font-size:15px;color:#003775;line-height:1.32">Helping SWFL businesses integrate AI into daily workflows</div>
+        <div style="font-size:10px;color:#56616F;margin-top:8px;font-weight:700;letter-spacing:.02em">Gulfshore Business</div>
+      </div>
+    </div>
+  </div></div>
+</header>
 
-<!-- TRUSTED: full-color labeled marquee -->
+<!-- ===================== TRUST / LOGOS ===================== -->
 <div class="logos">
-  <div class="wrap"><div class="cred-label reveal">Trusted across Southwest Florida</div></div>
-  <div class="marquee reveal d1"><div class="marquee-track">
-    <span class="lcell"><img class="lg" src="./img/logos/storm-smart.png" alt="Storm Smart" loading="lazy"><span class="nm">Storm Smart</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/irc.png" alt="IRC International Realty" loading="lazy"><span class="nm">IRC International Realty</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/finemark.png" alt="FineMark Bank &amp; Trust" loading="lazy"><span class="nm">FineMark Bank &amp; Trust</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/florida-trust.svg" alt="Florida Trust" loading="lazy"><span class="nm">Florida Trust</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/cfi.png" alt="Charitable Foundation of the Islands" loading="lazy"><span class="nm">Charitable Foundation of the Islands</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/bonita-bay.svg" alt="Bonita Bay Community Association" loading="lazy"><span class="nm">Bonita Bay</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/sanibel.png" alt="City of Sanibel" loading="lazy"><span class="nm">City of Sanibel</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/fifth-avenue.png" alt="Fifth Avenue Advisors" loading="lazy"><span class="nm">Fifth Avenue Advisors</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/storm-smart.png" alt="Storm Smart" loading="lazy"><span class="nm">Storm Smart</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/irc.png" alt="IRC International Realty" loading="lazy"><span class="nm">IRC International Realty</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/finemark.png" alt="FineMark Bank &amp; Trust" loading="lazy"><span class="nm">FineMark Bank &amp; Trust</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/florida-trust.svg" alt="Florida Trust" loading="lazy"><span class="nm">Florida Trust</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/cfi.png" alt="Charitable Foundation of the Islands" loading="lazy"><span class="nm">Charitable Foundation of the Islands</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/bonita-bay.svg" alt="Bonita Bay Community Association" loading="lazy"><span class="nm">Bonita Bay</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/sanibel.png" alt="City of Sanibel" loading="lazy"><span class="nm">City of Sanibel</span></span>
-    <span class="lcell"><img class="lg" src="./img/logos/fifth-avenue.png" alt="Fifth Avenue Advisors" loading="lazy"><span class="nm">Fifth Avenue Advisors</span></span>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:30px">
+    <div class="reveal">
+      <div class="eyebrow" style="margin-bottom:11px">Trusted across Southwest Florida</div>
+      <div style="font-family:Fraunces,serif;font-weight:800;font-size:28px;line-height:1.1;letter-spacing:-.01em;color:var(--ink);max-width:14em">Businesses, governments &amp; nonprofits put us to <span style="font-style:italic;font-weight:600;color:var(--green-d)">work.</span></div>
+    </div>
+    <div class="reveal d1" style="display:flex;gap:9px;flex-wrap:wrap">
+      <span style="font-size:11.5px;font-weight:700;color:var(--blue);background:var(--blue-s);padding:8px 15px;border-radius:9999px">Business</span>
+      <span style="font-size:11.5px;font-weight:700;color:var(--green-d);background:var(--green-s);padding:8px 15px;border-radius:9999px">Government</span>
+      <span style="font-size:11.5px;font-weight:700;color:var(--muted);background:#ECEAE1;padding:8px 15px;border-radius:9999px">Nonprofit</span>
+    </div>
+  </div>
+  <div class="wrap"><div class="logo-wall">
+    <div class="logo-cell reveal"><img src="./img/logos/storm-smart.png" alt="Storm Smart"><span class="nm">Storm Smart</span></div>
+    <div class="logo-cell reveal d1"><img src="./img/logos/irc.png" alt="IRC International Realty"><span class="nm">IRC International Realty</span></div>
+    <div class="logo-cell reveal d2"><img src="./img/logos/finemark.png" alt="FineMark Bank &amp; Trust"><span class="nm">FineMark Bank &amp; Trust</span></div>
+    <div class="logo-cell reveal d3"><img src="./img/logos/florida-trust.svg" alt="Florida Trust"><span class="nm">Florida Trust</span></div>
+    <div class="logo-cell reveal"><img src="./img/logos/cfi.png" alt="Charitable Foundation of the Islands"><span class="nm">Charitable Foundation of the Islands</span></div>
+    <div class="logo-cell reveal d1"><img src="./img/logos/bonita-bay.svg" alt="Bonita Bay"><span class="nm">Bonita Bay</span></div>
+    <div class="logo-cell reveal d2"><img src="./img/logos/sanibel-mark.png" alt="City of Sanibel"><span class="nm">City of Sanibel</span></div>
+    <div class="logo-cell reveal d3"><img src="./img/logos/fifth-avenue-mark.png" alt="Fifth Avenue Advisors"><span class="nm">Fifth Avenue Advisors</span></div>
   </div></div>
 </div>
 
-<!-- SANIBEL ANCHOR (before -> after) -->
-<section><div class="wrap"><div class="split">
-  <img class="shot-img reveal fl col-img" src="./img/dashboard.webp" alt="Sanibel recovery dashboard">
-  <div class="reveal d1">
-    <div class="eyebrow">Proof it works &middot; Transform</div>
-    <h2>We built Sanibel&rsquo;s recovery dashboard in a weekend.</h2>
-    <div class="ba">
-      <div class="cell"><div class="k">Before</div><div class="v">~40 recovery metrics&mdash;permits, sales &amp; bed tax, tourism&mdash;scattered across agencies. No shared view.</div></div>
-      <div class="cell aft"><div class="k">After</div><div class="v">One live dashboard, presented to City Council, now on the city&rsquo;s site and updated regularly.</div></div>
+<!-- ===================== THE THESIS (judgment manifesto) ===================== -->
+<section style="background:#E7E2D7;position:relative;overflow:hidden">
+  <svg viewBox="0 0 200 200" aria-hidden="true" style="position:absolute;top:-60px;right:-50px;width:340px;opacity:.07;pointer-events:none"><path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#003775"/><path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#003775" fill-opacity="0.6"/><path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#007158"/><path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#007158" fill-opacity="0.6"/></svg>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="eyebrow reveal">Our thesis</div>
+    <h2 class="reveal d1" style="font-size:50px;max-width:15.5em;margin:14px 0 26px;line-height:1.08">AI made knowledge infinite. The scarce thing now is <span style="font-style:italic;font-weight:600;color:var(--green-d)">judgment.</span></h2>
+    <div style="display:grid;grid-template-columns:1.25fr 1fr;gap:54px;align-items:end">
+      <p class="reveal d2" style="font-size:21px;line-height:1.55;color:var(--ink);font-weight:500;max-width:23em;margin:0">We&rsquo;re not here to sell you AI&mdash;we&rsquo;re here to solve the problem in front of you. We build the layer where your team&rsquo;s expertise meets AI, so the right call reaches the right person, fast. <strong>AI does the analysis. Your team keeps the judgment.</strong></p>
+      <div class="reveal d3" style="display:flex;flex-direction:column;gap:14px;border-left:2px solid rgba(0,55,117,.18);padding-left:24px">
+        <div style="font-family:Fraunces,serif;font-weight:600;font-size:19px;color:var(--ink)">Decide what matters.</div>
+        <div style="font-family:Fraunces,serif;font-weight:600;font-size:19px;color:var(--ink)">Ignore what doesn&rsquo;t.</div>
+        <div style="font-family:Fraunces,serif;font-weight:600;font-size:19px;color:var(--green-d)">Move faster than the competition.</div>
+      </div>
     </div>
-    <div class="quote">&ldquo;What you&rsquo;ve given them is hope.&rdquo;<span>Brian Rist &mdash; advisor &amp; community leader</span></div>
-    <a class="ghost" href="./work.html">See the Sanibel work &rarr;</a>
   </div>
-</div></div></section>
+</section>
 
-<!-- LADDER (stepped) -->
-<section class="sec-warm"><div class="wrap">
-  <div class="head reveal"><div class="eyebrow">How we work</div><h2>Three ways in. One direction.</h2>
-    <p>Most clients start with a workshop. The ones ready to move keep going&mdash;all the way to AI built into how the work gets done.</p></div>
-  <div class="steps">
-    <a class="step reveal" href="./workshops.html"><div class="num">01</div><div class="lab">Try</div><h3>Workshops</h3><p>Hands&#8209;on sessions built around your own business&mdash;not generic demos. The fastest way to see where AI fits.</p></a>
-    <a class="step reveal d1" href="./workshops.html"><div class="num">02</div><div class="lab">Train</div><h3>Team training</h3><p>We get your team using AI independently and well&mdash;the tools, the prompts, and the judgment to know what to trust.</p></a>
-    <a class="step hot reveal d2" href="./work.html"><div class="num">03</div><div class="lab">Transform</div><h3>AI integration</h3><p>We capture how your team works, automate the busywork, and build the internal apps and dashboards that change how the work gets done.</p><span class="tag">Where we go deepest</span></a>
-  </div>
-</div></section>
-
-<!-- METHOD: how integration works -->
-<section><div class="wrap">
-  <div class="head reveal"><div class="eyebrow">Transform</div><h2>How integration works.</h2>
-    <p>Not a slide deck&mdash;real changes to how the work gets done, in weeks, with the capability left inside your team.</p></div>
-  <div class="method">
-    <div class="mstep reveal"><div class="mn">1</div><h3>Capture the workflow</h3><p>We sit with your team and map how the work actually gets done&mdash;every task, handoff, and where the hours go.</p></div>
-    <div class="mstep reveal d1"><div class="mn">2</div><h3>Automate the busywork</h3><p>We find the repetitive steps AI can take off their plate, then wire up the automations around them.</p></div>
-    <div class="mstep reveal d2"><div class="mn">3</div><h3>Build the tools</h3><p>Internal apps and dashboards your team actually uses&mdash;like Sanibel&rsquo;s live recovery dashboard.</p></div>
-    <div class="mstep reveal d3"><div class="mn">4</div><h3>Embed our students</h3><p>FGCU students work inside your team as agents of change, so the capability stays in&#8209;house after we&rsquo;re done.</p></div>
-  </div>
-</div></section>
-
-<!-- IN THE ROOM -->
-<section class="sec-warm"><div class="wrap">
-  <div class="head reveal"><div class="eyebrow">In the room</div><h2>This is what it looks like.</h2>
-    <p>Real businesses, real software, real energy&mdash;students coaching at every table.</p></div>
-  <div class="room">
-    <div class="ph reveal"><img src="./img/workshop-full-room.webp" alt="A full-room Ain Hub workshop"></div>
-    <div class="ph reveal d1"><img src="./img/workshop-laughing-attendees.webp" alt="Workshop attendees laughing together"></div>
-    <div class="ph reveal d2"><img src="./img/workshop-1on1-help.webp" alt="A student helping an attendee one on one"></div>
-  </div>
-</div></section>
-
-<!-- BY THE NUMBERS -->
-<section class="numbers"><div class="wrap">
-  <div class="head center reveal"><div class="eyebrow">By the numbers</div><h2>Momentum you can measure.</h2></div>
-  <div class="stats">
-    <div class="stat reveal"><div class="n" data-count="500" data-suffix="+">500+</div><div class="l">people trained</div></div>
-    <div class="stat reveal d1"><div class="n">9.5<em>/10</em></div><div class="l">workshop rating</div></div>
-    <div class="stat reveal d2"><div class="n" data-count="185">185</div><div class="l">largest audience</div></div>
-    <div class="stat reveal d3"><div class="n" data-count="3">3</div><div class="l">integration clients</div></div>
-  </div>
-  <div class="growth reveal">
-    <div class="gbars" aria-hidden="true">
-      <div class="b" style="height:16%"></div>
-      <div class="b" style="height:33%"></div>
-      <div class="b" style="height:54%"></div>
-      <div class="b" style="height:76%"></div>
-      <div class="b last" style="height:100%"></div>
+<!-- ===================== HOW INTEGRATION WORKS ===================== -->
+<section id="integration">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Transform · what we do now</div>
+      <h2>How AI integration <span style="font-style:italic;font-weight:600">works.</span></h2>
+      <p>Not a slide deck&mdash;real changes to how the work gets done, in weeks, with the capability left inside your team.</p>
     </div>
-    <div class="growth-cap">From <b>8 attendees</b> in a room with no projector to a <b>185&#8209;person</b> seminar&mdash;in two years.</div>
+    <div class="method">
+      <div class="mstep reveal"><div class="mn">1</div><h3>Capture the workflow</h3><p>We sit with your team and map how the work actually gets done&mdash;every task, handoff, and where the hours go.</p></div>
+      <div class="mstep reveal d1"><div class="mn">2</div><h3>Automate the busywork</h3><p>We find the repetitive steps AI can take off their plate, then wire up the automations around them.</p></div>
+      <div class="mstep reveal d2"><div class="mn">3</div><h3>Build the tools</h3><p>Internal apps and dashboards your team actually uses&mdash;the kind they open every day.</p></div>
+      <div class="mstep reveal d3"><div class="mn">4</div><h3>Embed our students</h3><p>FGCU students work inside your team as agents of change, so the capability stays in&#8209;house after we&rsquo;re done.</p></div>
+    </div>
   </div>
-  <div class="press reveal d2" style="margin-top:42px"><span class="pl">As seen in</span><b>Business Observer</b> &middot; <b>WGCU</b> &middot; <b>Florida Weekly</b> &middot; <b>Gulf Coast News</b> &middot; <b>FGCU 360</b> &middot; <b>Santiva Chronicle</b></div>
-</div></section>
+</section>
 
-<!-- TESTIMONIALS -->
-<section class="sec-paper"><div class="wrap">
-  <div class="head reveal"><div class="eyebrow">What people say</div><h2>Real businesses. Real takeaways.</h2></div>
-  <div class="tgrid">
-    <div class="tcard reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Valuable information in a concise, fun, easy&#8209;to&#8209;understand manner. The immediate takeaway was fixing my website&mdash;I was thrilled to make changes right away.&rdquo;</p><div class="who">Workshop attendee &middot; Sanibel</div></div>
-    <div class="tcard reveal d1"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Very informative and helpful as a beginner. The fact that information had been prepared on our businesses beforehand was very nice.&rdquo;</p><div class="who">Workshop attendee &middot; Southwest Florida</div></div>
-    <div class="tcard reveal d2"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Great content that&rsquo;s up to date despite how quickly AI is changing&mdash;practical, and engaging to learn.&rdquo;</p><div class="who">Workshop attendee &middot; Fort Myers</div></div>
+<!-- ===================== IN THE PRESS ===================== -->
+<section id="press" style="background:radial-gradient(135% 120% at 14% 0%,#13263d 0%,#0b1828 58%,#060f1c 100%);color:#fff;position:relative;overflow:hidden">
+  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:-40px;right:5%;width:170px;opacity:.07;animation:drift2 19s ease-in-out infinite"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#7FD0BC" stroke-width="2"/></svg>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="reveal" style="display:flex;align-items:center;gap:14px;margin-bottom:42px">
+      <span style="font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:12.5px;color:#7FD0BC">In the press</span>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,.14)"></span>
+      <span style="font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.55)">Featured · June 2026</span>
+    </div>
+    <div style="display:grid;grid-template-columns:.86fr 1.14fr;gap:64px;align-items:center" class="press-split">
+      <div class="reveal fl" style="display:flex;justify-content:center;position:relative">
+        <div style="position:absolute;width:80%;height:80%;border-radius:50%;background:radial-gradient(circle,rgba(127,208,188,.28),transparent 70%);filter:blur(24px);top:10%"></div>
+        <a href="https://www.gulfshorebusiness.com/inside-the-magazine/southwest-florida-businesses-expand-use-of-ai-tools-in-2025/article_3cd97e5a-1e93-4f6f-b289-7c87515041b4.html" target="_blank" rel="noopener" class="tear" style="display:block;position:relative;text-decoration:none">
+          <div class="tear-card" style="background:#fff;padding:11px;border-radius:5px;box-shadow:0 36px 72px rgba(0,0,0,.5);transform:rotate(-2.5deg);transition:transform .45s cubic-bezier(.2,.7,.3,1);max-width:350px">
+            <img src="./img/press-following-the-future.jpg" alt="The Ain Hub featured in Gulfshore Business — &lsquo;Following the Future&rsquo;" style="width:100%;display:block;border-radius:2px">
+          </div>
+        </a>
+      </div>
+      <div class="reveal d1">
+        <div style="font-family:Fraunces,serif;font-size:70px;line-height:.5;color:#7FD0BC;height:34px" aria-hidden="true">&ldquo;</div>
+        <blockquote style="font-family:Fraunces,serif;font-weight:500;font-size:38px;line-height:1.24;letter-spacing:-.015em;color:#fff;margin:0 0 30px;text-wrap:balance">There is tremendous demand from businesses not just to get started but to <span style="font-style:italic;color:#7FD0BC">really integrate AI into their daily workflows.</span></blockquote>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:30px">
+          <img src="./img/founder.webp" alt="Mark Bole" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid rgba(127,208,188,.4)">
+          <div><div style="font-weight:700;font-size:16px;color:#fff">Mark Bole</div><div style="font-size:13.5px;color:rgba(255,255,255,.6)">Faculty Fellow · Ain Technology &amp; Design Hub, FGCU</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:26px;border-top:1px solid rgba(255,255,255,.14)">
+          <div>
+            <div style="font-family:Fraunces,serif;font-weight:800;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:#fff">Gulfshore Business</div>
+            <div style="font-size:13px;color:rgba(255,255,255,.6);margin-top:3px">&ldquo;Following the Future&rdquo; · SWFL businesses invest in AI · Jun&ndash;Jul 2026</div>
+          </div>
+          <a href="https://www.gulfshorebusiness.com/inside-the-magazine/southwest-florida-businesses-expand-use-of-ai-tools-in-2025/article_3cd97e5a-1e93-4f6f-b289-7c87515041b4.html" target="_blank" rel="noopener" class="pill" style="margin-left:auto">Read the full feature &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:64px;border-top:1px solid rgba(255,255,255,.12);padding-top:36px">
+      <div style="text-align:center;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:28px">Also covered by</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:50px;flex-wrap:wrap">
+        <a href="https://www.wgcu.org/human-interest/2025-11-20/a-how-to-on-ai-seminar-gives-seasonal-sanibel-and-captiva-residents-a-look-at-how-artificial-intelligence-fits-into-daily-life" target="_blank" rel="noopener" class="press-out"><img src="./img/logos/wgcu.png" alt="WGCU" style="height:32px"></a>
+        <a href="https://www.gulfcoastnewsnow.com/article/sanibel-businesses-ai-hurricane-recovery/68992050" target="_blank" rel="noopener" class="press-out"><img src="./img/logos/gulf-coast-news.png" alt="Gulf Coast News" style="height:30px"></a>
+        <a href="https://www.floridaweekly.com/articles/fort-myers-ae/florida-trust-hosts-welcome-back-workshop/" target="_blank" rel="noopener" class="press-out"><img src="./img/logos/florida-weekly.png" alt="Florida Weekly" style="height:28px"></a>
+        <a href="https://fgcu360.com/2023/04/18/gift-launches-new-design-and-technology-hub-in-entrepreneurship" target="_blank" rel="noopener" class="press-out"><img src="./img/logos/fgcu360.svg" alt="FGCU 360" style="height:26px"></a>
+        <a href="https://santivachronicle.com/news/fgcu-students-bring-innovation-insight-to-sanibels-post-storm-recovery/" target="_blank" rel="noopener" class="press-out"><img src="./img/logos/santiva.png" alt="Santiva Chronicle" style="height:32px"></a>
+        <img src="./img/logos/business-observer.svg" alt="Business Observer" class="press-out-static" style="height:24px">
+      </div>
+      <div class="reveal d1" style="margin-top:30px;text-align:center;font-size:13px;color:rgba(255,255,255,.5);line-height:1.7">
+        More coverage:
+        <a href="https://www.youtube.com/watch?v=WvBSw99BYR4" target="_blank" rel="noopener" style="color:#7FD0BC;font-weight:600">▶ Watch the news segment</a>
+        <span style="opacity:.4;margin:0 6px">·</span>
+        <a href="https://www.gulfcoastnewsnow.com/article/artificial-intelligence-sanibel-hurricane-ian-recovery-storm/68067501" target="_blank" rel="noopener" style="color:rgba(255,255,255,.78);font-weight:600">Sanibel&rsquo;s Ian recovery, Gulf Coast News</a>
+        <span style="opacity:.4;margin:0 6px">·</span>
+        <a href="https://santivachronicle.com/news/cfi-honors-spirit-of-generosity-at-inaugural-breakfast/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.78);font-weight:600">CFI inaugural breakfast, Santiva</a>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<!-- TEAM -->
-<section><div class="wrap"><div class="split">
-  <img class="shot-img reveal fr col-img" src="./img/team.webp" alt="The Ain Hub student team">
-  <div class="reveal d1">
-    <div class="eyebrow">Why it works</div>
-    <h2>Faculty&#8209;led. Student&#8209;powered. Built to last.</h2>
-    <p>Our students don&rsquo;t just assist&mdash;they embed in your team as <strong>agents of change</strong>, and the AI capability stays in&#8209;house long after we&rsquo;re done. Backed by FGCU&rsquo;s Daveler &amp; Kauanui School of Entrepreneurship and a $2M founding gift from Mark Ain.</p>
-    <div class="founder"><img src="./img/founder.webp" alt="Mark Bole"><div><div class="nm">Mark Bole &mdash; Faculty Fellow</div><div class="ph">&ldquo;Make AI understandable, show where it fits, and measure the impact.&rdquo;</div></div></div>
-    <div style="margin-top:24px"><a class="ghost" href="./about.html">Meet the team &rarr;</a></div>
+<!-- ===================== WHAT WE BUILD ===================== -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">What we build</div>
+      <h2>The tools your team <span style="font-style:italic;font-weight:600">actually</span> opens.</h2>
+      <p>Built around how you work&mdash;not a template. Here&rsquo;s where the busywork goes.</p>
+    </div>
+    <div class="grid2" style="margin-top:42px">
+      <div class="buildcard reveal">
+        <div class="mock blue"><div class="win">
+          <div class="chrome"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="winttl">CLIENT INTAKE</span></div>
+          <div class="rows">
+            <div class="row"><span class="av b"></span><span class="ln"><i style="width:72%"></i><i class="s" style="width:46%"></i></span><span class="tag2 done">DONE</span></div>
+            <div class="row"><span class="av g"></span><span class="ln"><i style="width:58%"></i><i class="s" style="width:38%"></i></span><span class="tag2 new">NEW</span></div>
+            <div class="row"><span class="av b"></span><span class="ln"><i style="width:66%"></i><i class="s" style="width:42%"></i></span><span class="tag2 done">DONE</span></div>
+          </div>
+        </div></div>
+        <h3>Internal apps</h3>
+        <p>Custom tools your team opens every day&mdash;built around your workflow, not a one&#8209;size template.</p>
+      </div>
+      <div class="buildcard reveal d1">
+        <div class="mock green"><div class="win pad">
+          <div class="chead"><span class="lbl">PERFORMANCE</span><span class="pct">67%</span></div>
+          <div class="chart"><i style="height:42%"></i><i style="height:60%"></i><i style="height:50%"></i><i class="mid" style="height:74%"></i><i class="hot" style="height:92%"></i></div>
+        </div></div>
+        <h3>Live dashboards</h3>
+        <p>One shared view of the numbers that matter, updated automatically&mdash;so the whole team works from the same picture.</p>
+      </div>
+      <div class="buildcard reveal">
+        <div class="mock blue center"><div class="flow">
+          <div class="chips"><span class="chip b">Email</span><span class="conn"></span><span class="chip ai">AI</span><span class="conn"></span><span class="chip b">CRM</span></div>
+          <span class="saved">SAVES 6 HRS / WEEK</span>
+        </div></div>
+        <h3>Workflow automation</h3>
+        <p>The repetitive steps AI can take off your plate&mdash;wired up so the busywork runs itself.</p>
+      </div>
+      <div class="buildcard reveal d1">
+        <div class="mock green"><div class="win chat">
+          <div class="msg me"><i style="width:84px"></i><i class="s" style="width:54px"></i></div>
+          <div class="msg them"><i style="width:118px"></i><i class="s" style="width:96px"></i><i class="s" style="width:62px"></i></div>
+        </div></div>
+        <h3>Team enablement</h3>
+        <p>Your people using AI independently and well&mdash;the tools, the prompts, and the judgment to know what to trust.</p>
+      </div>
+    </div>
   </div>
-</div></div></section>
+</section>
 
-<!-- CTA -->
-<section class="cta-band"><div class="wrap reveal">
-  <h2>Tell us your problem. We&rsquo;ll find where AI fits.</h2>
-  <p>Start with a workshop, or bring us your messiest workflow&mdash;and we&rsquo;ll show you what&rsquo;s possible.</p>
-  <div class="row"><a class="pill" href="./contact.html">Book a workshop</a><a class="pill line" href="mailto:mbole@fgcu.edu">Email Mark</a></div>
-</div></section>
+<!-- ===================== THREE WAYS IN ===================== -->
+<section class="sec-paper" id="ladder">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">How we work</div>
+      <h2>Three ways in. One <span style="font-style:italic;font-weight:600">transformational</span> direction.</h2>
+      <p>Most clients start with a workshop. The ones ready to move keep going&mdash;all the way to AI built into how the work gets done.</p>
+    </div>
+    <div class="steps">
+      <a class="step reveal" href="./workshops.html"><div class="num">01</div><div class="lab">Try</div><h3>Workshops</h3><p>Hands&#8209;on sessions built around your own business&mdash;not generic demos. The fastest way to see where AI fits.</p></a>
+      <a class="step reveal d1" href="./train.html"><div class="num">02</div><div class="lab">Train</div><h3>Team training</h3><p>We get your team using AI independently and well&mdash;the tools, the prompts, and the judgment to know what to trust.</p></a>
+      <a class="step hot reveal d2" href="./transform.html"><div class="num">03</div><div class="lab">Transform</div><h3>AI integration</h3><p>We capture how your team works, automate the busywork, and build the internal apps and dashboards that change how the work gets done.</p><span class="tag">Where we go deepest</span></a>
+    </div>
+  </div>
+</section>
 
-<!-- FOOTER -->
+<!-- ===================== IN THE ROOM ===================== -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">In the room</div>
+      <h2>This is what it looks like.</h2>
+      <p>Real businesses, real software, real energy&mdash;students coaching at every table.</p>
+    </div>
+    <div class="room">
+      <div class="ph reveal"><img src="./img/workshop-full-room.webp" alt="A full-room Ain Hub workshop"></div>
+      <div class="ph reveal d1"><img src="./img/workshop-laughing-attendees.webp" alt="Workshop attendees laughing together"></div>
+      <div class="ph reveal d2"><img src="./img/workshop-1on1-help.webp" alt="A student helping an attendee one on one"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BY THE NUMBERS ===================== -->
+<section class="numbers">
+  <svg viewBox="0 0 100 100" aria-hidden="true" class="hex-accent" style="top:-30px;right:6%;width:150px;opacity:.12"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#fff" stroke-width="2"/></svg>
+  <div class="wrap">
+    <div class="head center reveal">
+      <div class="eyebrow">By the numbers</div>
+      <h2>Momentum you can <span style="font-style:italic;font-weight:600">measure.</span></h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><div class="n"><span data-count="500" data-suffix="+">500+</span></div><div class="l">people trained</div></div>
+      <div class="stat reveal d1"><div class="n">9.5<em>/10</em></div><div class="l">workshop rating</div></div>
+      <div class="stat reveal d2"><div class="n"><span data-count="185">185</span></div><div class="l">largest audience</div></div>
+      <div class="stat reveal d3"><div class="n"><span data-count="3">3</span></div><div class="l">integration clients</div></div>
+    </div>
+    <div class="growth reveal">
+      <div class="gbars">
+        <span class="b" style="height:16%"></span><span class="b" style="height:33%"></span><span class="b" style="height:54%"></span><span class="b" style="height:76%"></span><span class="b last" style="height:100%"></span>
+      </div>
+      <div class="growth-cap">From <b>8 attendees</b> in a room with no projector to a <b>185&#8209;person</b> seminar&mdash;in six months.</div>
+    </div>
+    <div class="press reveal d1" style="margin-top:46px">
+      <span class="pl">Two years in. Just getting started.</span>
+      Naples · Fort Myers · Bonita Springs · Cape Coral · Sanibel · <b>Lee County</b>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="sec-paper">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">What people say</div>
+      <h2>Real businesses. Real takeaways.</h2>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>&ldquo;Valuable information in a concise, fun, easy&#8209;to&#8209;understand manner. The immediate takeaway was fixing my website&mdash;I was thrilled to make changes right away.&rdquo;</p><div class="who">Workshop attendee · Sanibel</div></div>
+      <div class="tcard reveal d1"><div class="stars">★★★★★</div><p>&ldquo;Very informative and helpful as a beginner. The fact that information had been prepared on our businesses beforehand was very nice.&rdquo;</p><div class="who">Workshop attendee · Southwest Florida</div></div>
+      <div class="tcard reveal d2"><div class="stars">★★★★★</div><p>&ldquo;Great content that&rsquo;s up to date despite how quickly AI is changing&mdash;practical, and engaging to learn.&rdquo;</p><div class="who">Workshop attendee · Fort Myers</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM ===================== -->
+<section id="team">
+  <div class="wrap"><div class="split">
+    <div class="reveal fl col-img"><img class="shot-img" src="./img/team.webp" alt="The Ain Hub student team"></div>
+    <div class="reveal d1">
+      <div class="eyebrow">Why it works</div>
+      <h2>Faculty&#8209;led. Student&#8209;powered. Built to last.</h2>
+      <div class="prose"><p>Our students don&rsquo;t just assist&mdash;they embed in your team as <strong>agents of change</strong>, and the AI capability stays in&#8209;house long after we&rsquo;re done. Backed by FGCU&rsquo;s Daveler &amp; Kauanui School of Entrepreneurship and a $2M founding gift from Mark Ain.</p></div>
+      <div class="founder">
+        <img src="./img/founder.webp" alt="Mark Bole">
+        <div><div class="nm">Mark Bole &mdash; Faculty Fellow</div><div class="ph">&ldquo;Make AI understandable, show where it fits, and measure the impact.&rdquo;</div></div>
+      </div>
+      <div style="margin-top:24px"><a class="ghost" href="./about.html">Meet the team &rarr;</a></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-band">
+  <svg class="hex-accent ha-a" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#007158" stroke-width="2"/></svg>
+  <svg class="hex-accent ha-b" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#003775" stroke-width="2"/></svg>
+  <div class="wrap reveal">
+    <h2>Tell us your problem. We&rsquo;ll find where AI fits.</h2>
+    <p>Start with a workshop, or bring us your messiest workflow&mdash;and we&rsquo;ll show you what&rsquo;s possible.</p>
+    <div class="row"><a class="pill" href="./contact.html">Book a workshop</a><a class="pill line" href="./transform.html">See how integration works</a></div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
 <footer><div class="wrap">
   <div class="foot-grid">
     <div>
       <img class="fl" src="./img/ainhub-wordmark-white.svg" alt="ainhub">
       <p class="ft">FGCU&rsquo;s student&#8209;powered AI practice&mdash;helping Southwest Florida put AI to work.</p>
-      <p class="serving">Serving Naples &middot; Fort Myers &middot; Bonita Springs &middot; Cape Coral &middot; Sanibel</p>
+      <p class="serving">Serving Naples · Fort Myers · Bonita Springs · Cape Coral · Sanibel</p>
     </div>
     <div><h4>Explore</h4><ul>
+      <li><a href="./what-we-do.html">What we do</a></li>
       <li><a href="./workshops.html">Workshops</a></li>
-      <li><a href="./work.html">Our Work</a></li>
+      <li><a href="./train.html">Train</a></li>
+      <li><a href="./transform.html">Transform</a></li>
+      <li><a href="./work.html">Work</a></li>
       <li><a href="./about.html">About</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul></div>
-    <div><h4>What we do</h4><ul>
-      <li>AI Workshops</li><li>Team Training</li><li>AI Integration</li><li>Dashboards &amp; Apps</li>
+    <div><h4>Services</h4><ul>
+      <li><a href="./workshops.html">AI Workshops</a></li>
+      <li><a href="./train.html">Team Training</a></li>
+      <li><a href="./transform.html">AI Integration</a></li>
+      <li><a href="./transform.html">Dashboards &amp; Apps</a></li>
     </ul></div>
     <div><h4>Connect</h4><ul>
       <li><a href="mailto:mbole@fgcu.edu">mbole@fgcu.edu</a></li>
       <li><a href="tel:+12394508321">(239) 450&#8209;8321</a></li>
       <li>FGCU, Fort Myers</li>
-      <li>LinkedIn &middot; Instagram &middot; Facebook</li>
+      <li>LinkedIn · Instagram · Facebook</li>
     </ul></div>
   </div>
-  <div class="foot-bot"><span>&copy; 2026 Ain Technology &amp; Design Hub, Florida Gulf Coast University.</span><span>Part of the Daveler &amp; Kauanui School of Entrepreneurship</span></div>
+  <div class="foot-bot"><span>© 2026 Ain Technology &amp; Design Hub, Florida Gulf Coast University.</span><span>Part of the Daveler &amp; Kauanui School of Entrepreneurship</span></div>
 </div></footer>
 
+<style>
+  /* homepage-only press accents */
+  .press-out{display:inline-flex;align-items:center;transition:transform .25s ease}
+  .press-out:hover{transform:translateY(-2px)}
+  .press-out img{filter:brightness(0) invert(1);opacity:.62;transition:.25s;max-width:150px;object-fit:contain}
+  .press-out:hover img{opacity:1}
+  .press-out-static{filter:brightness(0) invert(1);opacity:.5;max-width:150px;object-fit:contain}
+  .tear:hover .tear-card{transform:rotate(0deg) scale(1.025)!important}
+  @media (max-width:980px){.press-split{grid-template-columns:1fr!important;gap:40px!important}.press-split blockquote{font-size:30px!important}}
+</style>
 <script src="./js/site.js"></script>
 </body></html>

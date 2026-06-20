@@ -502,3 +502,168 @@ html.shot .page-hero.dark::before,html.shot .page-hero.dark .facet,html.shot .pa
 @media (max-width:640px){.buildcard{padding:26px}.mock{height:132px}}
 html.shot .hex-accent{animation:none}
 @media (prefers-reduced-motion:reduce){.hex-accent{animation:none}}
+
+/* ============================================================
+   Transform hero — a layered "live dashboard" being built,
+   instead of the generic emblem. Page-specific hero archetype.
+   ============================================================ */
+.hero-dash{position:relative;width:100%;max-width:440px;margin:0 auto;animation:floaty 7s ease-in-out infinite}
+.hero-dash .win{background:#fff;border-radius:14px;box-shadow:0 38px 70px rgba(0,0,0,.46);overflow:hidden;border:1px solid rgba(255,255,255,.5);transform:rotate(-2.5deg);transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.ph-art:hover .hero-dash .win{transform:rotate(0)}
+.hero-dash .win .bar{display:flex;align-items:center;gap:6px;padding:11px 14px;background:#FAFAF8;border-bottom:1px solid #EFEDE6}
+.hero-dash .win .bar i{width:9px;height:9px;border-radius:50%}
+.hero-dash .win .bar .ttl{margin-left:9px;font-size:10px;font-weight:800;letter-spacing:.09em;color:#56616F}
+.hero-dash .win .live{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:8.5px;font-weight:800;letter-spacing:.06em;color:#007158}
+.hero-dash .win .live span{width:6px;height:6px;border-radius:50%;background:#007158;box-shadow:0 0 0 3px rgba(0,113,88,.16)}
+.hero-dash .win .body{padding:16px}
+.hero-dash .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px}
+.hero-dash .kpi{background:#F6F8FA;border:1px solid #EAEEF3;border-radius:9px;padding:10px 11px}
+.hero-dash .kpi .k{font-size:8px;font-weight:800;letter-spacing:.05em;color:#8A94A2;text-transform:uppercase}
+.hero-dash .kpi .v{font-family:Fraunces,serif;font-weight:800;font-size:21px;color:#003775;line-height:1.05;margin-top:4px}
+.hero-dash .kpi.g .v{color:#007158}
+.hero-dash .chart{display:flex;align-items:flex-end;gap:8px;height:80px}
+.hero-dash .chart i{flex:1;border-radius:4px 4px 0 0;background:#D5E0EC;display:block}
+.hero-dash .chart i.g{background:#9CC8B6}.hero-dash .chart i.h{background:#007158}
+.hero-dash .float{position:absolute;left:-24px;bottom:-26px;background:#fff;border-radius:13px;box-shadow:0 26px 46px rgba(0,0,0,.4);padding:13px 15px;width:196px;animation:floaty2 7.5s ease-in-out infinite}
+.hero-dash .float .fl-k{font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#56616F;margin-bottom:9px}
+.hero-dash .float .fl-flow{display:flex;align-items:center;justify-content:space-between}
+.hero-dash .float .chip{font-size:9px;font-weight:800;padding:6px 9px;border-radius:8px}
+.hero-dash .float .chip.b{color:#003775;background:#fff;border:1px solid #E7E4DB;box-shadow:0 5px 12px rgba(0,55,117,.1)}
+.hero-dash .float .chip.ai{color:#fff;background:#007158;box-shadow:0 7px 16px rgba(0,113,88,.3)}
+.hero-dash .float .conn{flex:1;height:0;border-top:2px dashed #B9C4D4;margin:0 5px}
+.hero-dash .float .saved{display:block;margin-top:10px;font-size:8.5px;font-weight:800;letter-spacing:.05em;color:#00553F;background:#D6E8E1;padding:4px 9px;border-radius:9999px;text-align:center}
+.hero-dash .fbadge{position:absolute;right:-14px;top:-22px;width:72px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.42));animation:floaty 6.5s ease-in-out infinite}
+html.shot .hero-dash,html.shot .hero-dash .float,html.shot .hero-dash .fbadge{animation:none}
+@media (prefers-reduced-motion:reduce){.hero-dash,.hero-dash .float,.hero-dash .fbadge{animation:none}}
+
+/* ============================================================
+   Work / case studies page
+   ============================================================ */
+.case-feat{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;margin-top:8px}
+.case-feat .cf-panel{background:var(--surf);border:1px solid var(--border);border-radius:22px;padding:34px;box-shadow:0 22px 50px rgba(2,8,23,.08)}
+.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 6px}
+.case-metric{border:1px solid var(--border);border-radius:14px;padding:18px 20px;background:var(--warm)}
+.case-metric .m{font-family:Fraunces,serif;font-weight:800;font-size:38px;line-height:1;color:var(--green);letter-spacing:-.01em}
+.case-metric .m em{font-style:normal;font-size:20px;color:var(--muted)}
+.case-metric .d{font-size:13px;color:var(--muted);margin-top:8px;font-weight:600;line-height:1.35}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
+.case-card{position:relative;background:var(--surf);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,box-shadow .25s ease}
+.case-card:hover{transform:translateY(-6px);box-shadow:0 26px 52px rgba(2,8,23,.12)}
+.case-card .cc-tag{display:inline-flex;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green-d);background:var(--green-s);padding:6px 12px;border-radius:9999px}
+.case-card h3{font-size:23px}
+.case-card .cc-result{font-family:Fraunces,serif;font-weight:800;font-size:20px;color:var(--ink);line-height:1.2;letter-spacing:-.01em}
+.case-card .cc-result b{color:var(--green)}
+.case-card p{color:var(--muted);font-size:15.5px;margin:0}
+.case-card .cc-meta{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair);font-size:13px;color:var(--muted);font-weight:600;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.case-card .cc-meta .sec{color:var(--ink)}
+@media (max-width:980px){
+  .case-feat{grid-template-columns:1fr;gap:34px}
+  .case-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   Workshops hero — floating "three tools" chip over the photo
+   ============================================================ */
+.hero-tools{position:absolute;right:-20px;bottom:14px;background:#fff;border-radius:13px;box-shadow:0 24px 46px rgba(0,0,0,.36);padding:13px 15px;width:206px;animation:floaty2 7.5s ease-in-out infinite}
+.hero-tools .ht-k{font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#56616F;margin-bottom:10px}
+.hero-tools .ht-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.hero-tools .ht-row+.ht-row{margin-top:9px}
+.hero-tools .ht-name{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:#020817}
+.hero-tools .ht-dot{width:17px;height:17px;border-radius:6px;flex:0 0 auto}
+.hero-tools .ht-tag{font-size:8.5px;font-weight:800;letter-spacing:.04em;color:#00553F;background:#D6E8E1;padding:3px 8px;border-radius:9999px;white-space:nowrap}
+html.shot .hero-tools{animation:none}
+@media (prefers-reduced-motion:reduce){.hero-tools{animation:none}}
+
+/* ============================================================
+   Train hero — a "skill file" your team writes (dark editor)
+   ============================================================ */
+.hero-skill{position:relative;width:100%;max-width:430px;margin:0 auto;animation:floaty 7s ease-in-out infinite}
+.hero-skill .win{background:#0f2233;border:1px solid rgba(127,208,188,.25);border-radius:14px;box-shadow:0 38px 70px rgba(0,0,0,.5);overflow:hidden;transform:rotate(-2deg);transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.ph-art:hover .hero-skill .win{transform:rotate(0)}
+.hero-skill .bar{display:flex;align-items:center;gap:6px;padding:11px 14px;background:#0b1a28;border-bottom:1px solid rgba(255,255,255,.08)}
+.hero-skill .bar i{width:9px;height:9px;border-radius:50%}
+.hero-skill .bar .ttl{margin-left:9px;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#7FD0BC;font-family:ui-monospace,Menlo,Consolas,monospace}
+.hero-skill .code{padding:16px 18px 20px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.75}
+.hero-skill .code .ln{display:block;color:#cdd8e3;white-space:nowrap}
+.hero-skill .code .h{color:#7FD0BC;font-weight:700}
+.hero-skill .code .c{color:#7e8ea0}
+.hero-skill .code .g{color:#9be3c9}
+.hero-skill .code .ind{padding-left:16px}
+.hero-skill .float{position:absolute;right:-18px;bottom:-18px;background:#fff;border-radius:12px;box-shadow:0 24px 44px rgba(0,0,0,.36);padding:11px 15px;display:flex;align-items:center;gap:11px;animation:floaty2 7.5s ease-in-out infinite}
+.hero-skill .float .av{width:30px;height:30px;border-radius:8px;background:var(--green-s);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.hero-skill .float .ft-t{font-size:8.5px;font-weight:800;letter-spacing:.05em;color:#56616F;text-transform:uppercase}
+.hero-skill .float .ft-s{font-size:13px;font-weight:800;color:#003775;margin-top:1px}
+html.shot .hero-skill,html.shot .hero-skill .float{animation:none}
+@media (prefers-reduced-motion:reduce){.hero-skill,.hero-skill .float{animation:none}}
+
+/* ============================================================
+   Refined card icons — custom SVG line-icons replace emoji
+   ============================================================ */
+.card .ico{width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,var(--green-s),#E2EEE8);color:var(--green);font-size:0;margin-bottom:18px;box-shadow:0 1px 0 rgba(0,113,88,.06)}
+.card .ico svg{width:25px;height:25px;display:block;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============================================================
+   About — story timeline (editorial rhythm-breaker)
+   ============================================================ */
+.timeline{position:relative;margin-top:50px;max-width:760px}
+.timeline:before{content:"";position:absolute;left:13px;top:10px;bottom:14px;width:2px;background:repeating-linear-gradient(var(--green-s) 0 8px,transparent 8px 16px)}
+.tl-item{position:relative;padding:0 0 38px 58px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:4px;top:2px;width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--green);box-shadow:0 0 0 5px var(--green-s)}
+.tl-item.now .tl-dot{background:var(--green)}
+.tl-yr{font-family:Fraunces,serif;font-weight:800;font-size:23px;color:var(--green-d);line-height:1;margin-bottom:7px}
+.tl-h{font-family:Manrope;font-weight:800;font-size:19px;margin:0 0 6px;color:var(--ink)}
+.tl-item p{color:var(--muted);font-size:16px;margin:0;max-width:44em}
+
+/* About — team grid */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:24px;margin-top:48px}
+.tm{text-align:center}
+.tm .ph{aspect-ratio:1;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,var(--green-s),var(--blue-s));margin-bottom:14px;box-shadow:0 12px 30px rgba(2,8,23,.08);display:flex;align-items:center;justify-content:center;transition:transform .25s ease,box-shadow .25s ease}
+.tm:hover .ph{transform:translateY(-5px);box-shadow:0 22px 40px rgba(2,8,23,.14)}
+.tm .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tm .nm{font-family:Manrope;font-weight:800;font-size:17px;color:var(--ink)}
+.tm .rl{font-size:13.5px;color:var(--muted);margin-top:3px}
+
+/* Homepage logo wall — calm, contained, uniform grid */
+.logo-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.logo-cell{background:#fff;border:1px solid #EAE7DE;border-radius:14px;min-height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:22px 16px;box-shadow:0 1px 3px rgba(2,8,23,.04);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.logo-cell:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(2,8,23,.09);border-color:#9CC8B6}
+.logo-cell img{max-height:36px;max-width:148px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.58;transition:.25s}
+.logo-cell:hover img{filter:none;opacity:1}
+.logo-cell .nm{font-size:11.5px;font-weight:600;color:#8A8A82;text-align:center;line-height:1.25;letter-spacing:.01em}
+@media(max-width:880px){.logo-wall{grid-template-columns:repeat(2,1fr)}}
+
+/* ============================================================
+   Global: the nav overlays ANY dark hero — white wordmark + white
+   links at the top, flipping to the paper bar + dark links + color
+   wordmark once scrolled. Unifies the homepage and every inner page.
+   ============================================================ */
+.page-hero.dark{margin-top:-82px;padding-top:142px}
+body:has(.page-hero.dark) nav:not(.scrolled){background:transparent;box-shadow:none}
+body:has(.page-hero.dark) nav:not(.scrolled) .brand{filter:brightness(0) invert(1)}
+body:has(.page-hero.dark) nav:not(.scrolled) .nav-toggle span{background:#fff}
+@media (min-width:981px){
+  body:has(.page-hero.dark) nav:not(.scrolled) .nav-links>a,
+  body:has(.page-hero.dark) nav:not(.scrolled) .has-sub>a{color:#fff;opacity:.92}
+  body:has(.page-hero.dark) nav:not(.scrolled) .nav-links>a:hover,
+  body:has(.page-hero.dark) nav:not(.scrolled) .has-sub:hover>a{color:#fff;opacity:1}
+  body:has(.page-hero.dark) nav:not(.scrolled) .nav-links>a.active,
+  body:has(.page-hero.dark) nav:not(.scrolled) .has-sub>a.active{color:#7FD0BC;opacity:1}
+}
+@media (max-width:980px){.page-hero.dark{padding-top:118px}}
+
+/* In-page anchors clear the sticky nav */
+section[id],header[id]{scroll-margin-top:92px}
+
+/* Homepage hero: photo ken-burns + floating press chip */
+.page-hero.dark .ph-art .press-chip{position:absolute;top:1%;right:-10px;width:196px;background:rgba(255,255,255,.97);border-radius:15px;padding:14px 16px;box-shadow:0 22px 46px rgba(0,0,0,.34)}
+.page-hero.dark .ph-art .hero-photo{transform-box:fill-box;transform-origin:center;animation:kenburns 18s ease-in-out infinite alternate}
+header#top.page-hero.dark h1{font-size:68px}
+@media (max-width:980px){header#top.page-hero.dark h1{font-size:44px}}
+
+/* Cursor-parallax depth on hero motif (set by site.js) */
+.page-hero .ph-motif,.page-hero .ph-art{transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+
+/* Two-row logo marquee (homepage) */
+.logos .marquee.rev .marquee-track{animation-direction:reverse;animation-duration:52s}
+.logos .marquee+.marquee{margin-top:20px}
