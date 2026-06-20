@@ -1,4 +1,5 @@
 # Staging site — not for public indexing until launch (domain swap to theainhub.com).
-# At launch, replace the two lines below with:  User-agent: *  /  Allow: /
+# AT LAUNCH (see LAUNCH-TODO.md): (1) change "Disallow: /" below to "Allow: /";
+# (2) ALSO remove the X-Robots-Tag noindex header in vercel.json, or pages stay noindexed.
 User-agent: *
 Disallow: /
