@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="9.5 4.5 669 316" role="img" aria-label="ainhub">
 <g stroke="#FFFFFF" stroke-width="31" stroke-linecap="round" stroke-linejoin="round" fill="none">
-  <path d="M 90,114.5 a 35,35 0 1,1 0,70 a 35,35 0 1,1 0,-70 z"/>
-  <path d="M 125,115.5 L 125,184.5"/>
-  <path d="M 186,100 L 186,200"/>
-  <path d="M 236,200 L 236,141 A 41,41 0 0,1 318,141 L 318,200"/>
+  <path d="M 90,114.5 a 35,35 0 1,1 0,70 a 35,35 0 1,1 0,-70 z"></path>
+  <path d="M 125,115.5 L 125,184.5"></path>
+  <path d="M 186,100 L 186,200"></path>
+  <path d="M 236,200 L 236,141 A 41,41 0 0,1 318,141 L 318,200"></path>
 </g>
 <g stroke="#FFFFFF" stroke-width="31" stroke-linecap="round" stroke-linejoin="round" fill="none">
-  <path d="M 375,50 L 375,200"/>
-  <path d="M 375,140.5 A 40.5,40.5 0 0,1 456,140.5 L 456,234.5 A 40.5,40.5 0 0,0 537,234.5 L 537,50"/>
-  <path d="M 585,112 a 48,48 0 1,1 0,96 a 48,48 0 1,1 0,-96 z"/>
+  <path d="M 375,50 L 375,200"></path>
+  <path d="M 375,140.5 A 40.5,40.5 0 0,1 456,140.5 L 456,234.5 A 40.5,40.5 0 0,0 537,234.5 L 537,50"></path>
+  <path d="M 585,112 a 48,48 0 1,1 0,96 a 48,48 0 1,1 0,-96 z"></path>
 </g>
-<path d="M 186,52 L 202,61 L 202,79 L 186,88 L 170,79 L 170,61 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+<path d="M 186,52 L 202,61 L 202,79 L 186,88 L 170,79 L 170,61 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"></path>
 </svg>

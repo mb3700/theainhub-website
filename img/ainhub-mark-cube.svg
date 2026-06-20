@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400" role="img" aria-labelledby="t d">
   <title id="t">ainhub mark</title>
   <desc id="d">Faceted cube heritage mark for the Ain Hub — four facets converging in a single hexagon.</desc>
-  <path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#003775"/>
-  <path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#003775" fill-opacity="0.75"/>
-  <path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#007158"/>
-  <path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#007158" fill-opacity="0.75"/>
+  <path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#003775"></path>
+  <path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#003775" fill-opacity="0.75"></path>
+  <path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#007158"></path>
+  <path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#007158" fill-opacity="0.75"></path>
   <g stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" fill="none">
-    <line x1="100" y1="100" x2="100" y2="15"/>
-    <line x1="100" y1="100" x2="173" y2="57.5"/>
-    <line x1="100" y1="100" x2="173" y2="142.5"/>
-    <line x1="100" y1="100" x2="27" y2="142.5"/>
+    <line x1="100" y1="100" x2="100" y2="15"></line>
+    <line x1="100" y1="100" x2="173" y2="57.5"></line>
+    <line x1="100" y1="100" x2="173" y2="142.5"></line>
+    <line x1="100" y1="100" x2="27" y2="142.5"></line>
   </g>
 </svg>
