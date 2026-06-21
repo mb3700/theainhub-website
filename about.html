@@ -10,6 +10,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/site.css">
+<style>
+@keyframes trvbob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@keyframes trvrise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+#team-reveal{position:relative;height:300vh;background:#fff;padding:0}
+#team-reveal .tr-stage{position:sticky;top:0;height:100vh;overflow:hidden;background:#fff}
+#team-reveal .tr-tile>div{transition:transform .25s ease,box-shadow .25s ease}
+#team-reveal .tr-tile:hover>div{transform:translateY(-6px);box-shadow:0 26px 50px rgba(2,8,23,.18)}
+@media (max-width:759px){
+  #team-reveal{height:auto !important}
+  #team-reveal .tr-stage{position:static !important;height:auto !important;overflow:visible !important;padding:36px 16px 8px !important}
+  #team-reveal .tr-stage>svg{display:none !important}
+  #team-reveal .tr-head{position:static !important;padding:0 !important}
+  #team-reveal .tr-hint{display:none !important}
+  #team-reveal .tr-grid{position:static !important;left:auto !important;top:auto !important;width:auto !important;height:auto !important;display:grid !important;grid-template-columns:1fr 1fr !important;gap:18px !important;max-width:430px !important;margin:26px auto 0 !important;align-items:start;justify-items:center}
+  #team-reveal .tr-tile{position:static !important;transform:none !important;width:100% !important}
+  #team-reveal .tr-tile:hover>div{transform:none}
+}
+@supports (animation-timeline:view()){
+  @media (max-width:759px){
+    #team-reveal .tr-tile{animation:trvrise both;animation-timeline:view();animation-range:entry 4% cover 16%}
+  }
+}
+</style>
 </head><body>
 
 <nav><div class="wrap nav-in">
@@ -53,7 +76,7 @@
           <linearGradient id="ahedge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FD0BC"/><stop offset="1" stop-color="#0077B6"/></linearGradient>
         </defs>
         <path d="M170 30 L310 110 L310 262 L170 342 L30 262 L30 110 Z" fill="rgba(127,208,188,.18)"/>
-        <g clip-path="url(#ahx)"><image href="./img/team.webp" x="12" y="12" width="280" height="312" preserveAspectRatio="xMidYMid slice"/></g>
+        <g clip-path="url(#ahx)"><rect x="12" y="12" width="280" height="312" fill="#0b3a63"/><image href="./img/team.webp" x="12" y="28" width="280" height="280" preserveAspectRatio="xMidYMid meet"/></g>
         <path d="M152 12 L292 92 L292 244 L152 324 L12 244 L12 92 Z" fill="none" stroke="url(#ahedge)" stroke-width="4" stroke-linejoin="round"/>
       </svg>
       <svg class="badge" viewBox="0 0 200 200" aria-hidden="true"><path d="M 100,15 L 173,57.5 L 100,100 Z" fill="#003775"/><path d="M 173,57.5 L 173,142.5 L 100,100 Z" fill="#003775" fill-opacity="0.75"/><path d="M 100,100 L 173,142.5 L 100,185 L 27,142.5 Z" fill="#007158"/><path d="M 27,57.5 L 100,15 L 100,100 L 27,142.5 Z" fill="#007158" fill-opacity="0.75"/><g stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"><path d="M100 100 L100 15 M100 100 L173 57.5 M100 100 L173 142.5 M100 100 L27 142.5"/></g></svg>
@@ -82,28 +105,38 @@
     <div class="eyebrow">Who runs it</div>
     <h2>Faculty&#8209;led. Student&#8209;powered.</h2>
     <div class="prose">
-      <p>The Hub is a team. FGCU students do the work, bringing current AI fluency, while Faculty Fellow <strong>Mark Bole</strong> guides every engagement and your people bring the domain expertise that makes it useful.</p>
+      <p>The Hub is a team. FGCU students do the work, bringing current AI fluency, while Faculty Fellow <strong>Mark Bole</strong> guides every engagement and your team brings the domain expertise that makes it useful.</p>
       <p>Mark has taught AI at FGCU since 2023, after a career as a corporate executive, co&#8209;founder, and CEO. His approach is simple: <em>you learn by doing</em>, which is exactly how the students learn, and how we help your team.</p>
     </div>
     <div class="quote">&ldquo;Make AI understandable, show where it fits in real business, and measure the impact.&rdquo;<span>Mark Bole, Faculty Fellow</span></div>
   </div>
 </div></div></section>
 
-<!-- MEET THE TEAM -->
-<section><div class="wrap">
-  <div class="head reveal"><div class="eyebrow">Meet the team</div><h2>The people doing the <span style="font-style:italic;font-weight:600">work.</span></h2>
-    <p>Faculty&#8209;guided, student&#8209;powered, the team that embeds with your business.</p></div>
-  <div class="team-grid">
-    <div class="tm reveal"><div class="ph"><img src="./img/founder.webp" alt="Mark Bole"></div><div class="nm">Mark Bole</div><div class="rl">Faculty Fellow</div></div>
-    <div class="tm reveal d1"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal d2"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal d3"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal d1"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal d2"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
-    <div class="tm reveal d3"><div class="ph"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#9CC8B6" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><div class="nm">Team member</div><div class="rl">Name &amp; photo to come</div></div>
+<!-- MEET THE TEAM (scroll-reveal deck) -->
+<section id="team-reveal" data-screen-label="Meet the team">
+  <div class="tr-stage">
+    <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:12%;right:6%;width:300px;opacity:.05"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#003775" stroke-width="1.6"/></svg>
+    <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:8%;left:5%;width:240px;opacity:.05"><path d="M50 3 L91 26 L91 74 L50 97 L9 74 L9 26 Z" fill="none" stroke="#007158" stroke-width="1.6"/></svg>
+
+    <div class="tr-head" style="position:absolute;top:12%;left:0;right:0;text-align:center;padding:0 24px;z-index:5;pointer-events:none">
+      <div class="eyebrow">Meet the team</div>
+      <h2 style="font-family:Fraunces,serif;font-weight:800;font-size:clamp(28px,5vw,46px);letter-spacing:-.02em;color:#020817;margin:10px 0 0;line-height:1.04">The people doing the <span style="font-style:italic;font-weight:600">work.</span></h2>
+    </div>
+
+    <div class="tr-grid" style="position:absolute;left:50%;top:60%;width:0;height:0;z-index:3">
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#003775,#0077B6);overflow:hidden"><img src="./img/founder.webp" alt="Mark Bole" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Mark Bole</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">Faculty Fellow</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">Faculty-led</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#002A5A,#007158);overflow:hidden"><img src="./img/brian.webp" alt="Brian Rist" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Brian Rist</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">Ain Hub Advisor</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#003775,#00553F);overflow:hidden"><img src="./img/brennen.webp" alt="Brennen Bohannon" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Brennen Bohannon</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Solutions Engineer</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#007158,#003775);overflow:hidden"><img src="./img/makenzi.webp" alt="Makenzi Mickley" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Makenzi Mickley</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Program Manager</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#007158,#0077B6);overflow:hidden"><img src="./img/lauren.webp" alt="Lauren Belanger" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Lauren Belanger</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Creative Designer</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#00553F,#003775);overflow:hidden"><img src="./img/ari.webp" alt="Ari Wilson" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Ari Wilson</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Strategy Analyst</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#0077B6,#007158);overflow:hidden"><img src="./img/francesca.webp" alt="Francesca Cumins" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Francesca Cumins</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Growth Strategist</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+      <div class="tr-tile" style="position:absolute;left:0;top:0;width:200px;will-change:transform;transform:translate(-50%,-50%) scale(.9)"><div style="background:#fff;border:1px solid #E7E4DB;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(2,8,23,.13)"><div style="aspect-ratio:1;background:linear-gradient(150deg,#0077B6,#003775);overflow:hidden"><img src="./img/tate.webp" alt="Tate Moody" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="padding:12px 14px 14px"><div style="font-family:Manrope;font-weight:800;font-size:16px;color:#020817;line-height:1.2">Tate Moody</div><div style="font-size:12.5px;color:#56616F;margin:3px 0 11px;line-height:1.3">AI Researcher</div><span style="display:inline-block;font-family:Manrope;font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#007158;background:#D6E8E1;padding:4px 9px;border-radius:999px">AI-Native</span></div></div></div>
+    </div>
+
+    <div class="tr-hint" style="position:absolute;bottom:5%;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;color:#56616F;font-family:Manrope;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase">Scroll to meet them<span style="display:inline-block;animation:trvbob 1.6s ease-in-out infinite">&darr;</span></div>
   </div>
-</div></section>
+</section>
 
 <!-- HOW WE GOT HERE (timeline) -->
 <section class="sec-paper"><div class="wrap">
@@ -124,7 +157,7 @@
     <div class="eyebrow">Student&#8209;powered</div>
     <h2>A feature, not a discount.</h2>
     <div class="prose">
-      <p>Mark oversees every engagement. Our students work right alongside your domain experts. They bring current AI fluency, your people bring the expertise that makes it useful. It goes both ways, and the capability stays with you.</p>
+      <p>Mark oversees every engagement. Our students work right alongside your domain experts. They bring current AI fluency, your team brings the expertise that makes it useful. It goes both ways, and the capability stays with you.</p>
       <p><strong>Where we&rsquo;re headed:</strong> students as full &ldquo;agents of change,&rdquo; placed inside companies to drive adoption. That&rsquo;s the vision we&rsquo;re building toward, our way of helping Southwest Florida solve problems by adapting to AI.</p>
     </div>
   </div>
@@ -195,5 +228,55 @@
   <div class="foot-bot"><span>&copy; 2026 Ain Technology &amp; Design Hub, Florida Gulf Coast University.</span><span>Part of the Daveler &amp; Kauanui School of Entrepreneurship</span></div>
 </div></footer>
 
+<script>
+(function(){
+  var section=document.getElementById('team-reveal');
+  if(!section)return;
+  var tiles=[].slice.call(section.querySelectorAll('.tr-tile'));
+  var hint=section.querySelector('.tr-hint');
+  var reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var mobile=innerWidth<760;
+  var CFt=[],CS=[],cardW=200;
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+  function lerp(a,b,t){return a+(b-a)*t;}
+  function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
+  function prog(){var r=section.getBoundingClientRect();var tot=section.offsetHeight-innerHeight;if(tot<=0)return 0;return clamp(-r.top/tot,0,1);}
+  function layout(){
+    var vw=innerWidth,pad=vw<600?16:44,gap=vw<600?14:22,n=tiles.length;
+    var cols=vw<980?3:4,rows=Math.ceil(n/cols);
+    cardW=Math.max(150,Math.min(202,(vw-pad*2-gap*(cols-1))/cols));
+    tiles.forEach(function(el){el.style.width=cardW+'px';});
+    var ch=0;tiles.forEach(function(el){ch=Math.max(ch,el.firstElementChild.offsetHeight);});
+    var budget=innerHeight-(0.12*innerHeight+64)-36;
+    var gridH=(rows-1)*(ch+22)+ch;
+    if(gridH>budget&&budget>120){cardW=Math.max(128,Math.round(cardW*(budget/gridH)));tiles.forEach(function(el){el.style.width=cardW+'px';});ch=0;tiles.forEach(function(el){ch=Math.max(ch,el.firstElementChild.offsetHeight);});}
+    var rowHc=ch+22,colStep=cardW+gap;
+    CFt=tiles.map(function(_,i){var r=Math.floor(i/cols),c=i%cols,rc=Math.min(cols,n-r*cols);return {x:(c-(rc-1)/2)*colStep,y:(r-(rows-1)/2)*rowHc};});
+    var cm=(n-1)/2;
+    CS=tiles.map(function(_,i){return {x:(i-cm)*5,y:0,r:(i-cm)*3.5,s:.92};});
+  }
+  var queued=false;
+  function onScroll(){if(!queued){queued=true;requestAnimationFrame(tick);}}
+  function tick(){
+    queued=false;
+    var pc=reduced?1:prog();
+    for(var i=0;i<tiles.length;i++){
+      var s=CS[i],e=CFt[i];if(!s||!e)continue;
+      var t=ease(clamp((pc-0.08-i*0.06)/0.34,0,1));
+      var x=lerp(s.x,e.x,t),y=lerp(s.y,e.y,t),sc=lerp(s.s,1,t),r=lerp(s.r,0,t);
+      tiles[i].style.transform='translate(-50%,-50%) translate('+x+'px,'+y+'px) rotate('+r+'deg) scale('+sc+')';
+      tiles[i].style.zIndex=Math.round(t*10)+i;
+    }
+    if(hint)hint.style.opacity=clamp(1-pc*9,0,1);
+  }
+  mobile=innerWidth<760;
+  if(!mobile){
+    layout();
+    addEventListener('scroll',onScroll,{passive:true});
+    addEventListener('resize',function(){if((innerWidth<760)!==mobile){location.reload();return;}layout();tick();},{passive:true});
+    tick();
+  }
+})();
+</script>
 <script src="./js/site.js"></script>
 </body></html>
