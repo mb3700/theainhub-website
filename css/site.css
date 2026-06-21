@@ -634,6 +634,46 @@ html.shot .hero-skill,html.shot .hero-skill .float{animation:none}
 @media(max-width:880px){.logo-wall{grid-template-columns:repeat(2,1fr)}}
 
 /* ============================================================
+   Blog / Notes — index + article
+   ============================================================ */
+.post-list{max-width:840px;margin:0 auto;display:flex;flex-direction:column}
+.post-row{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:36px 0;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;transition:.2s}
+.post-row:first-child{padding-top:0}
+.post-row:hover{transform:translateX(4px)}
+.post-row .pdate{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d)}
+.post-row .pdate .by{display:block;color:var(--muted);font-weight:600;text-transform:none;letter-spacing:0;margin-top:6px;font-size:13px}
+.post-row h3{font-family:Fraunces,serif;font-weight:800;font-size:25px;line-height:1.15;letter-spacing:-.01em;margin:0 0 9px;color:var(--ink)}
+.post-row p{color:var(--muted);font-size:16px;line-height:1.55;margin:0}
+.post-row .more{display:inline-block;margin-top:12px;color:var(--green);font-weight:700;font-size:14.5px}
+@media(max-width:680px){.post-row{grid-template-columns:1fr;gap:10px}}
+
+.article{max-width:716px;margin:0 auto}
+.article .kicker{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.article .kicker .dot{width:4px;height:4px;border-radius:50%;background:var(--border)}
+.article .kicker .by{color:var(--muted);text-transform:none;letter-spacing:0;font-weight:600}
+.article .prose-lg{font-size:18px;line-height:1.72;color:#2C3742}
+.article .prose-lg>p{margin:0 0 24px}
+.article .prose-lg>p:first-of-type{font-size:20px;line-height:1.6;color:var(--ink)}
+.article .prose-lg h2{font-family:Fraunces,serif;font-weight:800;font-size:28px;letter-spacing:-.01em;color:var(--ink);margin:42px 0 16px;line-height:1.2}
+.article .prose-lg h3{font-family:Manrope;font-weight:800;font-size:20px;color:var(--ink);margin:32px 0 10px}
+.article .prose-lg strong{color:var(--ink);font-weight:700}
+.article .prose-lg a{color:var(--green);font-weight:600}
+.article .prose-lg ul{margin:0 0 24px;padding-left:0;list-style:none}
+.article .prose-lg ul li{position:relative;padding-left:28px;margin-bottom:12px}
+.article .prose-lg ul li:before{content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;border-radius:2px;background:var(--green);transform:rotate(45deg)}
+.article .prose-lg blockquote{margin:32px 0;padding:4px 0 4px 24px;border-left:3px solid var(--green);font-family:Fraunces,serif;font-style:italic;font-size:23px;line-height:1.4;color:var(--ink)}
+.article .pull-note{background:var(--green-s);border-radius:16px;padding:24px 26px;margin:32px 0;font-size:16px;line-height:1.55;color:var(--ink)}
+.article-foot{max-width:716px;margin:48px auto 0;padding-top:30px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.article-foot .back{color:var(--green);font-weight:700;text-decoration:none}
+.article .prose-lg .aside{font-style:italic;color:var(--ink);background:var(--warm);border-left:3px solid var(--green);padding:18px 22px;border-radius:0 12px 12px 0;margin:28px 0;font-size:17.5px;line-height:1.55}
+.article .prose-lg table{width:100%;border-collapse:collapse;margin:28px 0;font-size:15px}
+.article .prose-lg table caption{caption-side:bottom;font-size:13px;color:var(--muted);font-style:italic;margin-top:10px;text-align:left}
+.article .prose-lg th{text-align:left;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);background:var(--green-s);padding:12px 14px;border-bottom:2px solid #cfe0d8}
+.article .prose-lg td{padding:13px 14px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.45;color:#2C3742}
+.article .prose-lg tr:last-child td{border-bottom:none}
+.article .prose-lg .src{font-size:13px;color:var(--muted);font-style:italic;margin-top:-14px}
+
+/* ============================================================
    Global: the nav overlays ANY dark hero — white wordmark + white
    links at the top, flipping to the paper bar + dark links + color
    wordmark once scrolled. Unifies the homepage and every inner page.
