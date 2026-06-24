@@ -145,6 +145,7 @@ section{padding:104px 0}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .split.rev .col-img{order:2}
 .split img.shot-img{width:100%;border-radius:18px;box-shadow:0 22px 46px rgba(2,8,23,.13);object-fit:cover}
+.split img.shot-img.portrait{max-width:380px;justify-self:center}
 .split h2{font-size:40px;margin:14px 0 18px}
 .split p{color:var(--muted);font-size:17.5px;margin-bottom:14px}
 .quote{border-left:3px solid var(--green);padding:4px 0 4px 20px;margin:22px 0;font-family:Fraunces;font-style:italic;font-size:21px;color:var(--ink);line-height:1.4}
